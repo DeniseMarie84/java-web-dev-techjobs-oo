@@ -33,23 +33,17 @@ public class Job {
     // TODO: Add custom equals and hashCode methods. Consider two Job objects "equal" when their id fields
     //  match.
 
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Job job = (Job) o;
-        return id == job.id &&
-                Objects.equals(name, job.name) &&
-                Objects.equals(employer, job.employer) &&
-                Objects.equals(location, job.location) &&
-                Objects.equals(positionType, job.positionType) &&
-                Objects.equals(coreCompetency, job.coreCompetency);
+        return id == job.id;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, employer, location, positionType, coreCompetency);
+        return Objects.hash(id);
     }
 
 
@@ -80,9 +74,9 @@ public class Job {
         return coreCompetency;
     }
 
-    public void setId(int id) {
+    /*public void setId(int id) {
         this.id = id;
-    }
+    }*/
 
     public void setName(String name) {
         this.name = name;

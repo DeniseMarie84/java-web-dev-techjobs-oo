@@ -1,11 +1,11 @@
 package Tests;
 
-
 import org.junit.Before;
 import org.junit.Test;
 import org.launchcode.techjobs_oo.*;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class JobTest {
     Job test_job;
@@ -29,7 +29,7 @@ public class JobTest {
 
     @Test
     public void testSettingJobId() {
-        assertEquals(test_job.getId(), test_job2.getId() - test_job.getId(), 1);
+        assertEquals(1, test_job2.getId() - test_job.getId());
     }
 
     @Test
