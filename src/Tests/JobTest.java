@@ -23,7 +23,7 @@ public class JobTest {
                 new PositionType("Quality control"), new CoreCompetency("Persistence"));
         test_job4= new Job("Product tester", new Employer("ACME"), new Location("Desert"),
                 new PositionType("Quality control"), new CoreCompetency("Persistence"));
-        what_job= new Job("Coffee Drinker", new Employer(" "), new Location("Home"),
+        what_job= new Job("Coffee Drinker", new Employer(""), new Location("Home"),
                 new PositionType("Programmer"), new CoreCompetency("Tastebuds"));
     }
 

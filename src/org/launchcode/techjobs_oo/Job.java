@@ -107,17 +107,17 @@ public class Job {
     @Override
     public String toString() {
         String some_job = "";
-        if (name == " ") name = "Data not available";
-        if (employer.getValue() == " ") {
+        if (name.equals("")) name = "Data not available";
+        if (employer.getValue().equals("")) {
             employer.setValue("Data not available");
         }
-        if (location.getValue() == " ") {
+        if (location.getValue().equals("")) {
             location.setValue("Data not available");
         }
-        if (positionType.getValue() == " ") {
+        if (positionType.getValue().equals("")) {
             positionType.setValue("Data not available");
         }
-        if (coreCompetency.getValue() == " ") {
+        if (coreCompetency.getValue().equals("")) {
             coreCompetency.setValue("Data not available");
         }
         some_job = String.format("\nID: %d\n" +
