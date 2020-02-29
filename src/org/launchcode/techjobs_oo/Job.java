@@ -2,10 +2,7 @@ package org.launchcode.techjobs_oo;
 
 import java.util.Objects;
 
-public class Job extends JobField {
-    public Job(String value) {
-        super(value);
-    }
+public class Job {
 
         private int id;
         private static int nextId = 1;
@@ -105,22 +102,7 @@ public class Job extends JobField {
 
         @Override
         public String toString () {
-            String some_job = "";
-      /*  if (name.equals("")) name = "Data not available";
-        if (employer.getValue().equals("")) {
-            employer.setValue("Data not available");
-        }
-        if (location.getValue().equals("")) {
-            location.setValue("Data not available");
-        }
-        if (positionType.getValue().equals("")) {
-            positionType.setValue("Data not available");
-        }
-        if (coreCompetency.getValue().equals("")) {
-            coreCompetency.setValue("Data not available");
-        }*/
-            if (this.getValue().equals("")) {
-                this.setValue("Data not available");
+            String some_job;
 
                 some_job = String.format("\nID: %d\n" +
                         "Name: %s\n" +
@@ -128,7 +110,7 @@ public class Job extends JobField {
                         "Location: %s\n" +
                         "Position Type: %s\n" +
                         "Core Competency: %s\n", id, name, employer, location, positionType, coreCompetency + "\n");
-            }
+
             return some_job;
 
         }

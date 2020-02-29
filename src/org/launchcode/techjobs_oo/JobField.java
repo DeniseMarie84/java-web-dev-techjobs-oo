@@ -14,6 +14,10 @@ abstract public class JobField {
     public JobField(String value){
         this();
         this.value = value;
+
+        if (this.value.isBlank()){
+            this.setValue("Data not available");
+        }
     }
 
     public int getId() {
@@ -30,8 +34,7 @@ abstract public class JobField {
 
     @Override
     public String toString() {
-
-        return value;
+        return this.value;
     }
 
     @Override
